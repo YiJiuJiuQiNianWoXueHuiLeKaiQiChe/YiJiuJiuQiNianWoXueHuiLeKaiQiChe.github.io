@@ -57,6 +57,15 @@
     white-space: nowrap;
 }
 
+.logo-img {
+    width: 20px;
+    height: 20px;
+}
+
+.h5 {
+    font-size: 28px;
+}
+
 @keyframes typing {
     from {
         width: 2ch;
