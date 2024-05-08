@@ -1,0 +1,28 @@
+name: Update Website
+
+on:
+  push:
+    branches:
+      - test  # 监听 test 分支的 push 事件
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml jinja2
+      - name: Generate HTML
+        run: python generate_html.py
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy  # 推送到 deploy 分支
+          publish_dir: ./output
