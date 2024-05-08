@@ -1,0 +1,11 @@
+members:
+  - name: 春哥
+    github: ZM-J
+    blog: https://zm-j.github.io/
+    zhihu: https://www.zhihu.com/people/ZM_________J/posts
+    description: 令人尊敬，儒雅随和。
+    image: static/img/cg.png
+  - name: peigong
+    github: peidongg
+    description: 感谢一路有你
+    image: static/img/peigong.jpg
