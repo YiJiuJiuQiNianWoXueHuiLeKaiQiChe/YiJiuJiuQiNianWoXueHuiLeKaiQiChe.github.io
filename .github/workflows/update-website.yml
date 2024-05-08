@@ -3,7 +3,7 @@ name: Update Website
 on:
   push:
     branches:
-      - test  # 监听 test 分支的 push 事件
+      - test
 
 jobs:
   build-and-deploy:
@@ -19,10 +19,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml jinja2
       - name: Generate HTML
-        run: python generate_html.py
+        run: python scripts/generate_html.py
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: deploy  # 推送到 deploy 分支
+          publish_branch: gh-pages
           publish_dir: ./output
+          keep_files: true
