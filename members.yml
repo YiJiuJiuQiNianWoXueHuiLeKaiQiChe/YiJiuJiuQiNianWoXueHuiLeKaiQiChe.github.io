@@ -52,5 +52,6 @@ members:
     image: static/img/March7th.jpg
   - name: weyung
     github: weyung
+    blog: https://blog.weyung.cc/
     description: 未央
     image: https://blog.weyung.cc/images/wy.png
