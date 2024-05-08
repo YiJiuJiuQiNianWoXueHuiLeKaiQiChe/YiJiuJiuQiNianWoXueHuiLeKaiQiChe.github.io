@@ -77,9 +77,19 @@
               <a href="https://github.com/{{ member.github }}"><img class="logo-img" src="static/logo/github.svg" alt="GitHub"></a>
             </span>
             {% endif %}
+            {% if member.bilibili %}
+            <span class="logo">
+              <a href="{{ member.bilibili }}"><img class="logo-img" src="static/logo/bilibili.svg" alt="B站"></img></a>
+            </span>
+            {% endif %}
             {% if member.blog %}
             <span class="logo">
               <a href="{{ member.blog }}"><img class="logo-img" src="static/logo/blog.svg" alt="博客"></a>
+            </span>
+            {% endif %}
+            {% if member.zhihu %}
+            <span class="logo">
+              <a href="{{ member.zhihu }}"><img class="logo-img" src="static/logo/zhihu.svg" alt="知乎"></img></a>
             </span>
             {% endif %}
             <p>{{ member.description }}</p>
