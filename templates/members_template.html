@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta tags and CSS links -->
+</head>
+<body>
+  <div class="container">
+    {% for member in members %}
+    <div class="member">
+      <img src="{{ member.image }}" alt="">
+      <h5>{{ member.name }}</h5>
+      {% if member.github %}
+      <a href="https://github.com/{{ member.github }}">GitHub</a>
+      {% endif %}
+      {% if member.blog %}
+      <a href="{{ member.blog }}">Blog</a>
+      {% endif %}
+      <p>{{ member.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
