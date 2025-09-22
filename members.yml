@@ -10,7 +10,7 @@ members:
     github: peidongg
     description: 感谢一路有你
     image: static/img/peigong.jpg
-    category: hall of shame
+    category: normal
   - name: sh1kaku
     github: sh1k4ku
     bilibili: https://space.bilibili.com/50552845/dynamic
@@ -27,7 +27,7 @@ members:
     github: X3NNY
     description: X宝
     image: static/img/xenny.jpg
-    category: hall of shame
+    category: normal
   - name: Tover.
     github: ToverPomelo
     bilibili: https://space.bilibili.com/362587856
@@ -39,12 +39,12 @@ members:
     github: loveDengFeng
     description: Thr
     image: static/img/thr.jpg
-    category: normal
+    category: hall of shame
   - name: To1in
     github: TolinChan
     description: 托林
     image: static/img/tolin.jpg
-    category: hall of shame
+    category: normal
   - name: Vanish
     github: JayxV
     description: V
