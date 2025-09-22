@@ -5,53 +5,65 @@ members:
     zhihu: https://www.zhihu.com/people/ZM_________J/posts
     description: 令人尊敬，儒雅随和。
     image: static/img/cg.png
+    category: normal
   - name: peigong
     github: peidongg
     description: 感谢一路有你
     image: static/img/peigong.jpg
+    category: hall of shame
   - name: sh1kaku
     github: sh1k4ku
     bilibili: https://space.bilibili.com/50552845/dynamic
     blog: https://sh1k4ku.github.io/
     description: 无形之刃 最为致命
     image: static/img/shikaku.jpg
+    category: normal
   - name: 等风
     github: loveDengFeng
     description: DengFeng
     image: static/img/df.jpg
+    category: normal
   - name: Xenny
     github: X3NNY
     description: X宝
     image: static/img/xenny.jpg
+    category: hall of shame
   - name: Tover.
     github: ToverPomelo
     bilibili: https://space.bilibili.com/362587856
     blog: https://tover.xyz
     description: Know nothing about Crypto.
     image: https://tover.xyz/img/avatar.jpg
+    category: normal
   - name: 苏氨酸
     github: loveDengFeng
     description: Thr
     image: static/img/thr.jpg
+    category: normal
   - name: To1in
     github: TolinChan
     description: 托林
     image: static/img/tolin.jpg
+    category: hall of shame
   - name: Vanish
     github: JayxV
     description: V
     image: static/img/vanish.jpg
+    category: normal
   - name: ssst0n3
     github: ssst0n3
     description: 老大哥
     image: static/img/ssstone.jpg
+    category: normal
   - name: March7th
     github: March-7th-Tech
     blog: https://march-7th.tech/
     description: 三顺七
     image: static/img/March7th.jpg
+    category: normal
   - name: weyung
     github: weyung
     blog: https://blog.weyung.cc/
     description: 未央
     image: https://blog.weyung.cc/images/wy.png
+    category: normal

@@ -62,8 +62,15 @@
 
     <section class="slice slice-lg" data-delimiter="1">
       <div class="container">
+        <!-- Normal Members Section -->
+        {% if categorized_members.normal %}
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h3 class="heading h3">成员</h3>
+          </div>
+        </div>
         <div class="row cols-xs-space cols-sm-space cols-md-space">
-          {% for member in members %}
+          {% for member in categorized_members.normal %}
           <div class="col-lg-4">
             <div class="icon text-primary mb-3">
               <div class="member-icon">
@@ -96,6 +103,51 @@
           </div>
           {% endfor %}
         </div>
+        {% endif %}
+
+        <!-- Hall of Shame Section -->
+        {% if categorized_members['hall of shame'] %}
+        <div class="row mt-5">
+          <div class="col-12 text-center mb-5">
+            <h3 class="heading h3" style="color: #dc3545;">Hall of Shame</h3>
+            <p class="text-muted">这些人做了一些不太光彩的事情...</p>
+          </div>
+        </div>
+        <div class="row cols-xs-space cols-sm-space cols-md-space">
+          {% for member in categorized_members['hall of shame'] %}
+          <div class="col-lg-4">
+            <div class="icon text-danger mb-3">
+              <div class="member-icon" style="border: 2px solid #dc3545; border-radius: 50%; padding: 2px;">
+                <img src="{{ member.image }}" width="80" height="80" style="filter: grayscale(50%);">
+              </div>
+            </div>
+            <br><br>
+            <h5 class="heading h5" style="color: #dc3545;">{{ member.name }}</h5>
+            {% if member.github %}
+            <span class="logo">
+              <a href="https://github.com/{{ member.github }}"><img class="logo-img" src="static/logo/github.svg" alt="GitHub"></a>
+            </span>
+            {% endif %}
+            {% if member.bilibili %}
+            <span class="logo">
+              <a href="{{ member.bilibili }}"><img class="logo-img" src="static/logo/bilibili.svg" alt="B站"></img></a>
+            </span>
+            {% endif %}
+            {% if member.blog %}
+            <span class="logo">
+              <a href="{{ member.blog }}"><img class="logo-img" src="static/logo/blog.svg" alt="博客"></a>
+            </span>
+            {% endif %}
+            {% if member.zhihu %}
+            <span class="logo">
+              <a href="{{ member.zhihu }}"><img class="logo-img" src="static/logo/zhihu.svg" alt="知乎"></img></a>
+            </span>
+            {% endif %}
+            <p style="color: #6c757d;">{{ member.description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </section>
 
